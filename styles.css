@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+.container {
+    width: 1250px;
+    display:flex;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    margin-left: -150px;
+}
+.right {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right a {
+position: absolute;
+color: black;
+font-weight:500;
+text-decoration: none;
+margin-left: 580px;
+background-color: #ffffff;
+margin-top: -600px;
+padding: 11px;
+border-radius: 16px;
+gap: 8px;
+}
+
+.profile-card {
+    max-width: 400px;
+   
+}
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.profile-option {
+display: flex;
+align-items: center;
+background: rgb(225, 225, 225);
+border-radius: 12px;
+padding: 15px;
+margin-bottom: 12px;
+transition: 0.4s;
+cursor: pointer;
+gap: 12px;
+width: 500px;
+}
+
+.profile-option.selected {
+background: #fff8d6;
+border: 2px solid #fecd41;
+}
+
+.profile-option:hover {
+background: #fff8d6;
+border: 2px solid #fecd41;
+}
+
+.profile-option .icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+}
+
+.profile-option .text {
+flex-grow: 1;
+}
+
+.profile-option span {
+font-weight: bold;
+display: block;
+}
+
+.profile-option p {
+font-size: 14px;
+color: gray;
+}
+
+.profile-option input[type="radio"] {
+width: 20px;
+height: 20px;
+border: 2px solid #b0b0b0;
+border-radius: 50%;
+cursor: pointer;
+appearance: none;
+position: relative;
+}
+
+.profile-option input[type="radio"] {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #b0b0b0;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+cursor: pointer;
+}
+
+.profile-option input[type="radio"]::before {
+content: "";
+width: 10px;
+height: 10px;
+background: transparent;
+border-radius: 50%;
+transition: 0.3s ease-in-out;
+}
+
+.profile-option.selected input[type="radio"] {
+border-color: #fecd41;
+}
+
+.profile-option.selected input[type="radio"]::before {
+background: #fecd41;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+width: 500px;
+font-weight: bold;
+}
+
+.next-btn {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #ffcc00;
+color: black;
+font-weight: bold;
+border-radius: 10px;
+cursor: pointer;
+font-size: 18px;
+padding: 20px 30px;
+width: 500px;
+border: none;
+}
+
+.next-btn span {
+flex-grow: 1;
+text-align: center;
+margin-left: 190px;
+}
+
+.next-btn svg {
+margin-left: auto;
+font-weight: bold;
+}
+
+.next-btn:disabled {
+background: #ccc;
+cursor: not-allowed;
+}
+
+
+.right img {
+    width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 16px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px;
+}
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f8f9fa;
+margin: 0;
+}
+
+h1 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+.subtitle {
+color: gray;
+font-size: 14px;
+margin-bottom: 20px;
+}
+
+.input-group-2 {
+display: flex;
+align-items: center;
+background: #f1f1f1;
+padding: 10px;
+border-radius: 5px;
+margin-bottom: 15px;
+border: 2px solid transparent;
+}
+
+.input-group-2 i {
+margin-right: 10px;
+color: gray;
+}
+
+.input-group-2 input {
+width: 100%;
+border: none;
+background: none;
+outline: none;
+font-size: 16px;
+}
+
+.input-group-2:focus-within {
+border-color: gold;
+}
+
+.toggle-password {
+cursor: pointer;
+margin-left: auto;
+}
+
+.next-btn-2 {
+width: 100%;
+padding: 12px;
+border: none;
+background: #ddd;
+color: gray;
+font-size: 16px;
+border-radius: 5px;
+cursor: not-allowed;
+display: flex;
+align-items: center;
+justify-content:space-around;
+gap: 5px;
+}
+
+.back-link {
+display: flex;
+justify-content: center;
+text-align: center;
+cursor: pointer;
+margin-top: 15px;
+text-align: center;
+text-decoration: none;
+color: gray;
+}
+.next-btn-2 span {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 230px;
+    }
+.back-link:hover {
+text-decoration: underline;
+}
+.stuff-card{
+    display: none;
+}
+.block{
+    display: none;
+}
+.active{
+    display: block;
+}
+.next-btn-2.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding:  12;
+    width: 560px;
+    border: none;
+}
+@media (max-width: 1346px) {
+    .right {
+        display: none;
+    }
+    .left {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .container {
+        height: auto;
+    }
+    .next-btn-2 span{
+        text-align: center;
+        margin-left:135px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-option {
+        width: 100%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    .next-btn {
+        width: 100%;
+    }
+    .next-btn-2 span{
+        text-align: center;
+        margin-left:135px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+    .profile-option {
+        padding: 12px;
+    }
+    .profile-option span {
+        font-size: 16px;
+    }
+    .profile-option p {
+        font-size: 12px;
+    }
+    .next-btn {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    .next-btn span {
+        margin-left: 150px;
+        
+    }
+    .next-btn-2 span{
+        text-align: center;
+        margin-left:135px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .profile-option {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-option .icon {
+        width: 32px;
+        height: 32px;
+    }
+    .profile-option span {
+        font-size: 14px;
+    }
+    .profile-option p {
+        font-size: 12px;
+    }
+    .next-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .next-btn span {
+        margin-left: 100px;
+    }
+    .next-btn-2 span{
+        text-align: center;
+        margin-left:125px;
+    }
+}
