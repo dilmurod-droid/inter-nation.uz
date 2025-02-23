@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             if (data.ok) {
-                alert("✅ Ma'lumotlar yuborildi!");
+                alert("Loading!!!");
                 form.reset();
                 nextButton.setAttribute("disabled", "true");
                 nextButton.classList.remove("active");
